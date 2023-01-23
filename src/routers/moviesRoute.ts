@@ -6,7 +6,7 @@ import { reviewValidation } from "../middlewares/reviewValidationMiddleware.js";
 const movieRouter = Router();
 
 movieRouter.get("/movies", getMovies);
-movieRouter.get("/movies/platforms", platformValidation, getPlatform)
+movieRouter.get("/movies/platform", platformValidation, getPlatform)
 movieRouter.post("/movies", movieValidation ,postMovies);
 movieRouter.put("/movies/:id", reviewValidation,updateMovies);
 movieRouter.delete("/movies/:id", deleteMovies);
