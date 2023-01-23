@@ -6,3 +6,5 @@ export type Movies = {
     status?:string,
     notes?:string
    }
+
+export type Platform = Omit<Movies, "id"|"name"|"genre"|"status"|"notes" >
